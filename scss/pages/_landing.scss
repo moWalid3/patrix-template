@@ -1,0 +1,39 @@
+.landing {
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 76px);
+  @include bg-gradient;
+  .intro {
+    color: $white;
+    h2 {
+      @media (min-width: 768px) {
+        font-size: 4rem !important;
+      }
+      font-weight: 800;
+    }
+    p {
+      color: $text-dark;
+      @media (min-width: 768px) {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .image {
+    img {
+      animation: move-top-down 10s infinite linear;
+      @media (max-width: 991px) {
+        width: 20rem;
+      }
+    }
+  }
+}
+@include keyFrame(move-top-down) {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}

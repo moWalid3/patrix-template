@@ -1,0 +1,60 @@
+
+.testimonials {
+  @include bg-gradient;
+  color: white;
+  .wave {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      background-color: $white;
+    }
+  }
+  .heading {
+    
+    p {
+      color: $text-dark !important;
+    }
+    h2 {
+      &::after {
+        background-color: $purple-light !important;
+      }
+    }
+  }
+  .client {
+    position: relative;
+    .words {
+      margin-bottom: 5rem;
+      svg {
+        color: $primary;
+      }
+    }
+    .info {
+      position: absolute;
+      bottom: -7.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      .stars-icons{
+        color: $primary;
+      }
+      .image {
+        img {
+          width: 6rem;
+          padding: .2rem;
+          @include bg-gradient;
+        }
+      }
+      p {
+        color: $text-dark;
+      }
+    }
+  }
+  .btns-control {
+    margin-top: 9rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrix template</title>
+    <!-- bootstrap + normalize -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body id="body" data-bs-target="#navbar-ex" data-bs-spy="scroll">
+
+    <div class="scroll-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+
+    <nav id="navbar-ex" class="navbar navbar-expand-lg sticky-top py-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button
+          class="icon-toggler navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars px-1 fs-4"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" aria-current="page" href="#landing"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" href="#services">Services</a>
+            </li>
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" href="#faq">Faq</a>
+            </li>
+            <li class="nav-item px-lg-1">
+              <a class="nav-link p-0 p-lg-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button class="my-btn ms-lg-2">
+            <span>+1 728365413</span>
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="landing" class="landing">
+      <div
+        class="container text-center text-md-start h-100 gap-5 d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <div id="head" class="intro">
+          <h2 class="fs-1">Hey!, I'm Patrick</h2>
+          <p class="fs-5 my-md-4">
+            this is a multi-purpose responsive layout created with bootstrap v5.
+            (here your can place your description text)
+          </p>
+          <button class="my-btn mx-auto mx-md-0">
+            <span>Get In Touch</span>
+            <div class="icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </button>
+        </div>
+        <div class="image">
+          <img src="images/arts/intro-section-illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="wave">
+        <svg
+          id="wave"
+          style="transform: rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 120"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,60L14.1,68C28.2,76,56,92,85,84C112.9,76,141,44,169,26C197.6,8,226,4,254,8C282.4,12,311,24,339,26C367.1,28,395,20,424,32C451.8,44,480,76,508,78C536.5,80,565,52,593,34C621.2,16,649,8,678,8C705.9,8,734,16,762,26C790.6,36,819,48,847,62C875.3,76,904,92,932,86C960,80,988,52,1016,48C1044.7,44,1073,64,1101,60C1129.4,56,1158,28,1186,24C1214.1,20,1242,40,1271,46C1298.8,52,1327,44,1355,42C1383.5,40,1412,44,1440,46C1468.2,48,1496,48,1525,46C1552.9,44,1581,40,1609,44C1637.6,48,1666,60,1694,66C1722.4,72,1751,72,1779,72C1807.1,72,1835,72,1864,74C1891.8,76,1920,80,1948,80C1976.5,80,2005,76,2019,74L2032.9,72L2032.9,120L2018.8,120C2004.7,120,1976,120,1948,120C1920,120,1892,120,1864,120C1835.3,120,1807,120,1779,120C1750.6,120,1722,120,1694,120C1665.9,120,1638,120,1609,120C1581.2,120,1553,120,1525,120C1496.5,120,1468,120,1440,120C1411.8,120,1384,120,1355,120C1327.1,120,1299,120,1271,120C1242.4,120,1214,120,1186,120C1157.6,120,1129,120,1101,120C1072.9,120,1045,120,1016,120C988.2,120,960,120,932,120C903.5,120,875,120,847,120C818.8,120,791,120,762,120C734.1,120,706,120,678,120C649.4,120,621,120,593,120C564.7,120,536,120,508,120C480,120,452,120,424,120C395.3,120,367,120,339,120C310.6,120,282,120,254,120C225.9,120,198,120,169,120C141.2,120,113,120,85,120C56.5,120,28,120,14,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="heading text-center py-5">
+        <h2 class="pb-2 mb-4 fw-bolder">Our Services</h2>
+        <p class="text-muted-">
+          You must be the change you wish to see in the world.
+        </p>
+      </div>
+      <div class="container">
+        <div
+          class="service mb-5 d-flex flex-column text-center text-md-start flex-md-row justify-content-between align-items-center gap-sm-3 gap-lg-5"
+        >
+          <div class="service-text w-100">
+            <i class="main-icon fs-1 fas fa-paper-plane"></i>
+            <h3 class="fw-bold fs-2 my-2">Marketing</h3>
+            <p class="text-muted lh-lg">
+              Your time is limited, so don't waste it living someone else's
+              life. Don't be trapped by dogma — which is living with the results
+              of other people's thinking.
+            </p>
+            <button class="my-btn mx-auto mx-md-0">
+              <span>Learn More</span>
+              <div class="icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+          </div>
+          <img
+            class="d-none d-sm-block"
+            src="./images/services/service-1.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="service mb-5 d-flex flex-column flex-md-row-reverse text-center text-md-start justify-content-between align-items-center gap-md-3 gap-lg-5"
+        >
+          <div class="service-text w-100">
+            <i class="main-icon fs-1 fas fa-code"></i>
+            <h3 class="fw-bold fs-2 my-2">Web Development</h3>
+            <p class="text-muted lh-lg">
+              Your time is limited, so don't waste it living someone else's
+              life. Don't be trapped by dogma — which is living with the results
+              of other people's thinking.
+            </p>
+            <button class="my-btn mx-auto mx-md-0">
+              <span>Learn More</span>
+              <div class="icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+          </div>
+          <img
+            class="d-none d-sm-block"
+            src="./images/services/service-2.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="service mb-5 d-flex flex-column text-center text-md-start flex-md-row justify-content-between align-items-center gap-lg-5"
+        >
+          <div class="service-text w-100">
+            <i class="main-icon fs-1 fas fa-cloud-upload-alt"></i>
+            <h3 class="fw-bold fs-2 my-2">Cloud Hosting</h3>
+            <p class="text-muted lh-lg">
+              Your time is limited, so don't waste it living someone else's
+              life. Don't be trapped by dogma — which is living with the results
+              of other people's thinking.
+            </p>
+            <button class="my-btn mx-auto mx-md-0">
+              <span>Learn More</span>
+              <div class="icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </button>
+          </div>
+          <img
+            class="d-none d-sm-block"
+            src="./images/services/service-3.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials pb-5">
+      <div class="wave">
+        <svg
+          id="wave"
+          style="transform: rotate(180deg); transition: 0.3s"
+          viewBox="0 0 1440 120"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,24L14.1,32C28.2,40,56,56,85,52C112.9,48,141,24,169,22C197.6,20,226,40,254,50C282.4,60,311,60,339,50C367.1,40,395,20,424,10C451.8,0,480,0,508,16C536.5,32,565,64,593,80C621.2,96,649,96,678,96C705.9,96,734,96,762,92C790.6,88,819,80,847,72C875.3,64,904,56,932,56C960,56,988,64,1016,58C1044.7,52,1073,32,1101,36C1129.4,40,1158,68,1186,70C1214.1,72,1242,48,1271,32C1298.8,16,1327,8,1355,6C1383.5,4,1412,8,1440,24C1468.2,40,1496,68,1525,72C1552.9,76,1581,56,1609,48C1637.6,40,1666,44,1694,44C1722.4,44,1751,40,1779,42C1807.1,44,1835,52,1864,52C1891.8,52,1920,44,1948,36C1976.5,28,2005,20,2019,16L2032.9,12L2032.9,120L2018.8,120C2004.7,120,1976,120,1948,120C1920,120,1892,120,1864,120C1835.3,120,1807,120,1779,120C1750.6,120,1722,120,1694,120C1665.9,120,1638,120,1609,120C1581.2,120,1553,120,1525,120C1496.5,120,1468,120,1440,120C1411.8,120,1384,120,1355,120C1327.1,120,1299,120,1271,120C1242.4,120,1214,120,1186,120C1157.6,120,1129,120,1101,120C1072.9,120,1045,120,1016,120C988.2,120,960,120,932,120C903.5,120,875,120,847,120C818.8,120,791,120,762,120C734.1,120,706,120,678,120C649.4,120,621,120,593,120C564.7,120,536,120,508,120C480,120,452,120,424,120C395.3,120,367,120,339,120C310.6,120,282,120,254,120C225.9,120,198,120,169,120C141.2,120,113,120,85,120C56.5,120,28,120,14,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="heading text-center py-5">
+        <h2 class="pb-2 mb-4 fw-bolder">Testimonials</h2>
+        <p class="text-muted">what our clients are saying</p>
+      </div>
+      <div class="container">
+        <div class="client rounded-3 bg-white bg-opacity-75 p-4">
+          <div class="words">
+            <p class="text-muted text-center pb-3">
+              <i class="fa-solid fa-2x fa-quote-left"></i>
+              Whether you're stuck in a creative rut or feeling down after a
+              professional setback, these words can help give you the boost you
+              need to move forward.
+              <i class="fa-solid fa-2x fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="info text-center">
+            <div class="stars-icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="image mt-2">
+              <img
+                class="rounded-circle"
+                src="./images/testimonials/client-4.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="pt-2">Andrew Tate</h4>
+            <p>CEO & Founder</p>
+          </div>
+        </div>
+        <div class="btns-control">
+          <button type="button" class="btn btn-outline-light py-1 mx-1">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light py-1 mx-1">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="work pb-5">
+      <div class="wave">
+        <svg
+          id="wave"
+          style="transform: rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 100"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,40L20,40C40,40,80,40,120,33.3C160,27,200,13,240,15C280,17,320,33,360,41.7C400,50,440,50,480,46.7C520,43,560,37,600,36.7C640,37,680,43,720,50C760,57,800,63,840,61.7C880,60,920,50,960,43.3C1000,37,1040,33,1080,28.3C1120,23,1160,17,1200,25C1240,33,1280,57,1320,63.3C1360,70,1400,60,1440,60C1480,60,1520,70,1560,75C1600,80,1640,80,1680,68.3C1720,57,1760,33,1800,35C1840,37,1880,63,1920,66.7C1960,70,2000,50,2040,41.7C2080,33,2120,37,2160,38.3C2200,40,2240,40,2280,38.3C2320,37,2360,33,2400,31.7C2440,30,2480,30,2520,33.3C2560,37,2600,43,2640,53.3C2680,63,2720,77,2760,70C2800,63,2840,37,2860,23.3L2880,10L2880,100L2860,100C2840,100,2800,100,2760,100C2720,100,2680,100,2640,100C2600,100,2560,100,2520,100C2480,100,2440,100,2400,100C2360,100,2320,100,2280,100C2240,100,2200,100,2160,100C2120,100,2080,100,2040,100C2000,100,1960,100,1920,100C1880,100,1840,100,1800,100C1760,100,1720,100,1680,100C1640,100,1600,100,1560,100C1520,100,1480,100,1440,100C1400,100,1360,100,1320,100C1280,100,1240,100,1200,100C1160,100,1120,100,1080,100C1040,100,1000,100,960,100C920,100,880,100,840,100C800,100,760,100,720,100C680,100,640,100,600,100C560,100,520,100,480,100C440,100,400,100,360,100C320,100,280,100,240,100C200,100,160,100,120,100C80,100,40,100,20,100L0,100Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="heading text-center py-5">
+        <h2 class="pb-2 mb-4 fw-bolder">Latest Work</h2>
+        <p class="text-muted-">
+          I find that the harder I work, the more luck I seem to have.
+        </p>
+      </div>
+      <div class="container">
+        <div class="category-btns mb-5 text-center">
+          <button type="button" class="btn">All</button>
+          <button type="button" class="btn">Websites</button>
+          <button type="button" class="btn">Design</button>
+          <button type="button" class="btn">Mockup</button>
+        </div>
+        <div class="row row-gap-4">
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-2.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 1
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-9.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 2
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-2.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 3
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-9.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 4
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-2.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 5
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project col-sm-6 col-lg-4">
+            <div class="image shadow-sm">
+              <img
+                class="img-fluid"
+                src="./images/portfolio/portfolio-9.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h4 class="fs-5 fw-bold lh-base">
+                  PROJECT NAME<br />
+                  GOES HERE 6
+                </h4>
+                <p>category project</p>
+                <button type="button" class="btn btn-outline-light">
+                  More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="wave">
+        <svg
+          id="wave"
+          style="transform: rotate(180deg); transition: 0.3s"
+          viewBox="0 0 1440 120"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,24L14.1,32C28.2,40,56,56,85,52C112.9,48,141,24,169,22C197.6,20,226,40,254,50C282.4,60,311,60,339,50C367.1,40,395,20,424,10C451.8,0,480,0,508,16C536.5,32,565,64,593,80C621.2,96,649,96,678,96C705.9,96,734,96,762,92C790.6,88,819,80,847,72C875.3,64,904,56,932,56C960,56,988,64,1016,58C1044.7,52,1073,32,1101,36C1129.4,40,1158,68,1186,70C1214.1,72,1242,48,1271,32C1298.8,16,1327,8,1355,6C1383.5,4,1412,8,1440,24C1468.2,40,1496,68,1525,72C1552.9,76,1581,56,1609,48C1637.6,40,1666,44,1694,44C1722.4,44,1751,40,1779,42C1807.1,44,1835,52,1864,52C1891.8,52,1920,44,1948,36C1976.5,28,2005,20,2019,16L2032.9,12L2032.9,120L2018.8,120C2004.7,120,1976,120,1948,120C1920,120,1892,120,1864,120C1835.3,120,1807,120,1779,120C1750.6,120,1722,120,1694,120C1665.9,120,1638,120,1609,120C1581.2,120,1553,120,1525,120C1496.5,120,1468,120,1440,120C1411.8,120,1384,120,1355,120C1327.1,120,1299,120,1271,120C1242.4,120,1214,120,1186,120C1157.6,120,1129,120,1101,120C1072.9,120,1045,120,1016,120C988.2,120,960,120,932,120C903.5,120,875,120,847,120C818.8,120,791,120,762,120C734.1,120,706,120,678,120C649.4,120,621,120,593,120C564.7,120,536,120,508,120C480,120,452,120,424,120C395.3,120,367,120,339,120C310.6,120,282,120,254,120C225.9,120,198,120,169,120C141.2,120,113,120,85,120C56.5,120,28,120,14,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="heading text-center">
+        <h2 class="pb-2 mb-4 fw-bolder">FAQ</h2>
+        <p class="text-muted">
+          frequently asked questions, get knowledge befere hand
+        </p>
+      </div>
+      <div class="container pt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item shadow mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="shadow-none accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What are the main features?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                It's also worth noting that just about any HTML can go within
+                the <code>.accordion-body</code>, though the transition does
+                limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item shadow mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="shadow-none accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                do i have to pay again after trial
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong>
+                It's also worth noting that just about any HTML can go within
+                the <code>.accordion-body</code>, though the transition does
+                limit overflow.
+              </div>
+            </div>
+          </div>
+          <!-- ACCORDION ITEM 3 -->
+          <div class="accordion-item shadow mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="shadow-none accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How can I get started after trial?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It
+                It's also worth noting that just about any HTML can go within
+                the <code>.accordion-body</code>, though the transition does
+                limit overflow.
+              </div>
+            </div>
+          </div>
+          <!-- ACCORDION ITEM 4 -->
+          <div class="accordion-item shadow mb-3">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="shadow-none accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Can I be refunded if am not satisfied?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the fourth item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact pb-5">
+      <div class="wave">
+        <svg
+          id="wave"
+          style="transform: rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 120"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,60L14.1,68C28.2,76,56,92,85,84C112.9,76,141,44,169,26C197.6,8,226,4,254,8C282.4,12,311,24,339,26C367.1,28,395,20,424,32C451.8,44,480,76,508,78C536.5,80,565,52,593,34C621.2,16,649,8,678,8C705.9,8,734,16,762,26C790.6,36,819,48,847,62C875.3,76,904,92,932,86C960,80,988,52,1016,48C1044.7,44,1073,64,1101,60C1129.4,56,1158,28,1186,24C1214.1,20,1242,40,1271,46C1298.8,52,1327,44,1355,42C1383.5,40,1412,44,1440,46C1468.2,48,1496,48,1525,46C1552.9,44,1581,40,1609,44C1637.6,48,1666,60,1694,66C1722.4,72,1751,72,1779,72C1807.1,72,1835,72,1864,74C1891.8,76,1920,80,1948,80C1976.5,80,2005,76,2019,74L2032.9,72L2032.9,120L2018.8,120C2004.7,120,1976,120,1948,120C1920,120,1892,120,1864,120C1835.3,120,1807,120,1779,120C1750.6,120,1722,120,1694,120C1665.9,120,1638,120,1609,120C1581.2,120,1553,120,1525,120C1496.5,120,1468,120,1440,120C1411.8,120,1384,120,1355,120C1327.1,120,1299,120,1271,120C1242.4,120,1214,120,1186,120C1157.6,120,1129,120,1101,120C1072.9,120,1045,120,1016,120C988.2,120,960,120,932,120C903.5,120,875,120,847,120C818.8,120,791,120,762,120C734.1,120,706,120,678,120C649.4,120,621,120,593,120C564.7,120,536,120,508,120C480,120,452,120,424,120C395.3,120,367,120,339,120C310.6,120,282,120,254,120C225.9,120,198,120,169,120C141.2,120,113,120,85,120C56.5,120,28,120,14,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="heading text-center py-5">
+        <h2 class="pb-2 mb-4 fw-bolder">Get Started</h2>
+        <p class="text-muted-">
+          You must be the change you wish to see in the world.
+        </p>
+      </div>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="info col-lg-6 px-0">
+            <h3 class="lh-sm">
+              100% <br />
+              Satisfaction <br />
+              Guaranteed
+            </h3>
+            <p class="lh-lg my-4">
+              The real test is not whether you avoid this failure, because you
+              won't. It's whether you let it harden or shame you into inaction,
+              or whether you learn from it; whether you choose to persevere.
+            </p>
+            <h4 class="fs-3 mb-2">What will be the next step?</h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>We'll prepare the proposal.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>we'll discuss it together.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>let's start the discussion.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="form-box col-lg-6 px-0">
+            <h3>Start Your Project</h3>
+            <form action="">
+              <input
+                class="rounded-2 mb-3"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="rounded-2 mb-3"
+                type="text"
+                placeholder="Last Name"
+              />
+              <input
+                class="rounded-2 mb-3 w-100"
+                type="email"
+                placeholder="Email Address"
+              />
+              <textarea
+                class="rounded-2 mb-3 d-block w-100"
+                placeholder="Message"
+              ></textarea>
+              <button class="rounded-pill w-100" type="submit">
+                Send <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies py-5">
+      <div class="heading text-center mb-5">
+        <h2 class="fs-2 pb-3 mb-4 fw-bolder">Trusted by campanies like</h2>
+      </div>
+      <div class="container">
+        <div class="row text-center row-gap-4">
+          <div class="col-md-4">
+            <img class="" src="./images/campanies/campany-2.png" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img class="" src="./images/campanies/campany-3.png" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img class="" src="./images/campanies/campany-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="details">
+        <div class="container">
+          <div class="row py-4 row-gap-4">
+            <div
+              class="text-center text-lg-start d-flex flex-column flex-lg-row justify-content-center align-items-center col-sm-4"
+            >
+              <i
+                class="fa-solid me-lg-3 mb-3 mb-lg-0 fa-3x fa-phone-volume"
+              ></i>
+              <div class="text">
+                <h5>
+                  <a class="text-decoration-none text-white" href=""
+                    >+1 728365413</a
+                  >
+                </h5>
+                <p class="pb-0 mb-0">Mon-Fri 9am-6pm</p>
+              </div>
+            </div>
+            <div
+              class="text-center text-lg-start d-flex flex-column flex-lg-row justify-content-center align-items-center col-sm-4"
+            >
+              <i
+                class="fa-regular me-lg-3 mb-3 mb-lg-0 fa-3x fa-envelope-open"
+              ></i>
+              <div class="text">
+                <h5>
+                  <a class="text-decoration-none text-white" href=""
+                    >info@company.com</a
+                  >
+                </h5>
+                <p class="pb-0 mb-0">Online support</p>
+              </div>
+            </div>
+            <div
+              class="text-center text-lg-start d-flex flex-column flex-lg-row justify-content-center align-items-center col-sm-4"
+            >
+              <i
+                class="fa-solid me-lg-3 mb-3 mb-lg-0 fa-3x fa-map-location-dot"
+              ></i>
+              <div class="text">
+                <h5>
+                  <a class="text-decoration-none text-white" href=""
+                    >New York, USA</a
+                  >
+                </h5>
+                <p class="pb-0 mb-0">NY 10012, US</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <div class="container">
+          <div class="row row row-gap-5 py-5">
+            <div class="company col-12 col-md-6">
+              <h4>company</h4>
+              <p class="mb-0 pe-md-5">
+                How wonderful it is that nobody need wait a single moment before
+                starting to improve the world.
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h4>Products</h4>
+              <ul class="list-unstyled">
+                <li><a href="">Community</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Developer</a></li>
+                <li><a href="">Account</a></li>
+              </ul>
+            </div>
+            <div class="col-4 col-md-2">
+              <h4>Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="">Home </a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">Portfolio</a></li>
+              </ul>
+            </div>
+            <div class="col-4 col-md-2">
+              <h4>Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="">FAQ </a></li>
+                <li><a href="">Render</a></li>
+                <li><a href="">Tutorial</a></li>
+                <li><a href="">Robot</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-page text-center py-4">
+        <div
+          class="container mt-2 d-flex flex-column-reverse flex-md-row justify-content-between align-items-center"
+        >
+          <div class="copyright flex-grow-1">
+            <p class="mb-0 pb-0 text-white-50">
+              &copy; Copyright 2024 <span>Company</span> | Created by
+              <span>M.W</span>
+            </p>
+          </div>
+          <div class="social flex-grow-1 mb-4 mb-md-0">
+            <a class="text-decoration-none" href="">
+              <i class="fa-brands fs-3 fa-facebook"></i>
+            </a>
+            <a class="text-decoration-none ms-3" href="">
+              <i class="fa-brands fs-3 fa-x-twitter"></i>
+            </a>
+            <a class="text-decoration-none ms-3" href="">
+              <i class="fa-brands fs-3 fa-github"></i>
+            </a>
+            <a class="text-decoration-none ms-3" href="">
+              <i class="fa-brands fs-3 fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

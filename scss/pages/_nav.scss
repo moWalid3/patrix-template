@@ -1,0 +1,25 @@
+@import "../components/buttons";
+nav {
+  @include bg-gradient;
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.15) !important;
+  .icon-toggler {
+    border-color: $text-dark;
+    color: $white;
+    &:hover {
+      color: $text-dark !important;
+    }
+  }
+  li {
+    a {
+      font-size: 1.2rem !important;
+      display: none;
+      color: $text-dark !important;
+      &:hover {
+        color: $white !important;
+      }
+      &.active {
+        color: $white !important;
+      }
+    }
+  }
+}

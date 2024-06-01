@@ -1,0 +1,58 @@
+
+.my-btn {
+  @include prefix(box-sizing, border-box);
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50rem;
+  border: 0.05rem solid $primary;
+  background-color: $white;
+  &:hover {
+    @include bg-gradient;
+    border: 0.05rem solid $text-dark;
+    span {
+      color: $white;
+    }
+    .icon {
+      background-color: transparent;
+    }
+  }
+  span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #212121;
+  }
+  .icon {
+    background-color: $primary;
+    margin-left: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    svg {
+      font-size: 1.1rem;
+      color: $white;
+    }
+  }
+}
+
+.category-btns button {
+  color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+  &:visited {
+    background-color: $primary;
+  }
+  &:active {
+    color: $primary !important;
+    border-color: $primary !important;
+  }
+}

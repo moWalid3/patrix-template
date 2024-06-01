@@ -1,0 +1,23 @@
+.wave {
+  @include bg-gradient;
+}
+
+.heading {
+  h2 {
+    font-size: 4rem;
+    position: relative;
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -5rem;
+      width: 10rem;
+      height: .25rem;
+      background-color: $primary;
+    }
+  }
+}

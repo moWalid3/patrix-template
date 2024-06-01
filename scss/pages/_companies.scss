@@ -1,0 +1,14 @@
+
+.companies {
+  background-color: #f8f9fa;
+
+  .row {
+    img {
+      height: 4rem;
+      &:hover {
+
+        filter: grayscale(1);
+      }
+    }
+  }
+}
